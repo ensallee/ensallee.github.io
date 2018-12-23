@@ -1,0 +1,78 @@
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* the escalator image */
+.main-container img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* betsy sallee */
+.name-container {
+    bottom: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    position: absolute;
+    right: 25px;
+}
+
+/* the nav */
+.nav {
+    position: absolute;
+    bottom: 60px;
+    right: 15;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .list-item {
+    display: inline-block;
+    padding: 0px 8px 8px 0px;
+    font-size: 40px;
+  }
+  
+  .list-item a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .list-item a:hover {
+    text-decoration: none;
+    color:rgba(255,255,255, .5);
+  }
+
+  .list-item:nth-last-child(n+2)::after {
+    content: "|";
+    color: rgb(142, 50, 63);
+    padding: 20px;
+  }
+
+  /* the poetry list */
+  .poetry-list {
+      visibility: hidden;
+  }
+
+  .visible {
+      visibility: visible;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-right: 21px;
+  }
+
+  .small {
+      font-size: 32px;
+  }
