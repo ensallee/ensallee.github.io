@@ -1,78 +1,171 @@
 .main-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 
 /* the escalator image */
 .main-container img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 /* betsy sallee */
 .name-container {
-    bottom: 25px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 120px;
-    position: absolute;
-    right: 25px;
+  bottom: 25px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 120px;
+  position: absolute;
+  right: 25px;
 }
 
 /* the nav */
 .nav {
-    position: absolute;
-    bottom: 60px;
-    right: 15;
-    padding: 0px;
-    text-align: center;
-    font-size: 20px;
+  position: absolute;
+  bottom: 60px;
+  right: 15;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .nav ul {
-    list-style: none;
-    padding: 0px;
-    font-family: 'Lato', sans-serif;
+  list-style: none;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 0px 8px 8px 0px;
+  font-size: 40px;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-item a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.list-item:nth-last-child(n + 2)::after {
+  content: "|";
+  color: rgb(142, 50, 63);
+  padding: 20px;
+}
+
+/* the email form */
+.email-container {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(142, 50, 63);
+  padding: 20px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 5px;
+}
+
+form {
+  margin-bottom: 0px;
+}
+
+input {
+  width: 95%;
+  height: 80px;
+  padding: 8px;
+  margin: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 15px;
+}
+
+textarea {
+  width: 95%;
+  height: 200px;
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: 30px;
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+textarea::placeholder {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+/* the poetry list */
+.poetry-list {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 21px;
+}
+
+.visible {
+  /* this class is used for contact form, as well */
+  visibility: visible;
+}
+
+.small {
+  font-size: 32px;
+}
+
+
+/* for desktop */
+@media (min-width: 1281px) {
+    /* the email form */
+  input {
+    height: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 15px;
   }
 
-  .list-item {
-    display: inline-block;
-    padding: 0px 8px 8px 0px;
-    font-size: 40px;
-  }
-  
-  .list-item a {
-    text-decoration: none;
-    color: white;
+  textarea {
+      font-size: 15px;
   }
 
-  .list-item a:hover {
-    text-decoration: none;
-    color:rgba(255,255,255, .5);
+  input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background: white;
+    border: none;
+    color: black;
+    font-size: 15px;
+    padding: 0px
   }
 
-  .list-item:nth-last-child(n+2)::after {
-    content: "|";
-    color: rgb(142, 50, 63);
-    padding: 20px;
+  input::placeholder {
+    font-size: 15px;
   }
 
-  /* the poetry list */
-  .poetry-list {
-      visibility: hidden;
+  textarea::placeholder {
+    font-size: 15px;
   }
-
-  .visible {
-      visibility: visible;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-right: 21px;
-  }
-
-  .small {
-      font-size: 32px;
-  }
+}
