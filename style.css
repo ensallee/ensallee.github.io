@@ -93,7 +93,17 @@ input[type="submit"] {
   background: white;
   border: none;
   color: black;
-  font-size: 15px;
+  font-size: 30px;
+}
+
+#cancel-button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 30px;
 }
 
 textarea {
@@ -135,10 +145,9 @@ textarea::placeholder {
   font-size: 32px;
 }
 
-
 /* for desktop */
 @media (min-width: 1281px) {
-    /* the email form */
+  /* the email form */
   input {
     height: 30px;
     padding-bottom: 25px;
@@ -147,7 +156,7 @@ textarea::placeholder {
   }
 
   textarea {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   input[type="submit"] {
@@ -158,7 +167,11 @@ textarea::placeholder {
     border: none;
     color: black;
     font-size: 15px;
-    padding: 0px
+    padding: 0px;
+  }
+
+  #cancel-button {
+    font-size: 15px;
   }
 
   input::placeholder {
