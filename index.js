@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const contactButton = document.getElementById("contact");
   const emailForm = document.querySelector(".email-container");
   const cancelButton = document.getElementById("cancel-button");
+  const autofocus = document.getElementById("autofocus");
 
   poetryAnchor.addEventListener("click", toggleVisiblePoetry);
   contactButton.addEventListener("click", toggleVisibleEmail);
@@ -17,5 +18,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function toggleVisibleEmail(e) {
     e.preventDefault();
     emailForm.classList.toggle("visible");
+    autofocus.focus()
   }
 });

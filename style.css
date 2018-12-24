@@ -98,8 +98,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: rgba(255, 255, 255, 0.5);
-  }
+  background: rgba(255, 255, 255, 0.5);
+}
 
 #cancel-button {
   width: 116px;
@@ -113,7 +113,7 @@ input[type="submit"]:hover {
 }
 
 #cancel-button:hover {
-    background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 textarea {
@@ -155,8 +155,34 @@ textarea::placeholder {
   font-size: 32px;
 }
 
+/* the icons */
+.icon-container {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.icon-container ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.icon-item {
+  display: inline-block;
+  font-size: 45px;
+  padding: 28px;
+}
+
+.icon-item a {
+  color: rgba(142, 50, 63, 0.7);
+}
+
+.icon-item a:hover {
+  color: rgba(142, 50, 63, 0.9);
+}
+
 /* for desktop */
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   /* the email form */
   input {
     height: 30px;
@@ -192,5 +218,11 @@ textarea::placeholder {
 
   textarea::placeholder {
     font-size: 15px;
+  }
+
+  /* the icons */
+  .icon-item {
+    font-size: 20px;
+    padding: 8px;
   }
 }
