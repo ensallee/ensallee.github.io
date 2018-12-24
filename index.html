@@ -18,7 +18,9 @@
             <a target="_blank" href="https://github.com/ensallee">Code</a>
           </li>
           <li id="poetry-anchor" class="list-item"><a href="#">Poetry</a></li>
-          <li class="list-item"><a target="_blank" href="#">C.V.</a></li>
+          <li class="list-item">
+            <a target="_blank" href="./files/Sallee_Resume_081318.pdf">C.V.</a>
+          </li>
           <li id="contact" class="list-item">
             <a target="_blank" href="#">Contact</a>
           </li>
@@ -42,25 +44,29 @@
         </li>
       </ul>
       <div class="email-container">
-      <form
-        action="https://mailthis.to/betsysallee"
-        method="POST"
-        encType="multipart/form-data"
-      >
-        <input type="text" name="name" placeholder="Your name" />
-        <input type="email" name="_replyto" placeholder="Your email" />
-        <textarea
-          name="message"
-          placeholder="Enter your message here"
-        ></textarea>
-        <input type="hidden" name="_subject" value="Contact form submitted" />
-        <input type="hidden" name="_after" value="./index.html" />
-        <input type="hidden" name="_honeypot" value="" />
-        <input type="hidden" name="_confirmation" value="" />
-        <input type="submit" value="Send" />
-        <button id="cancel-button">Cancel</button>
-      </form>
-    </div>
+        <form
+          action="https://mailthis.to/betsysallee"
+          method="POST"
+          encType="multipart/form-data"
+        >
+          <input type="text" name="name" placeholder="Your name"/>
+          <input type="email" name="_replyto" placeholder="Your email" />
+          <textarea
+            name="message"
+            placeholder="Enter your message here"
+          ></textarea>
+          <input type="hidden" name="_subject" value="Contact form submitted" />
+          <input type="hidden" name="_after" value="./index.html" />
+          <input type="hidden" name="_honeypot" value="" />
+          <input
+            type="hidden"
+            name="_confirmation"
+            value="Your email has been sent."
+          />
+          <input type="submit" value="Send" />
+          <button id="cancel-button">Cancel</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
