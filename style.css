@@ -1,8 +1,11 @@
-.main-container {
-  position: relative;
+#root {
   width: 100vw;
   height: 100vh;
   margin: 0;
+}
+
+.main-container {
+  position: relative;
 }
 
 /* the escalator image */
@@ -38,6 +41,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* these are also used by the poetry list */
 .list-item {
   display: inline-block;
   padding: 0px 8px 8px 0px;
