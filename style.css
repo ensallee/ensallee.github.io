@@ -1,3 +1,7 @@
+html {
+  min-width: 320px;
+}
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -20,7 +24,8 @@
   bottom: 25px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 120px;
+  font-size: 70px;
+  padding-bottom: 20px;
   position: absolute;
   right: 25px;
 }
@@ -45,7 +50,7 @@
 .list-item {
   display: inline-block;
   padding: 0px 8px 8px 0px;
-  font-size: 40px;
+  font-size: 23px;
 }
 
 .list-item a {
@@ -95,8 +100,8 @@
 
 .icon-item {
   display: inline-block;
-  font-size: 45px;
-  padding: 28px;
+  font-size: 30px;
+  padding: 10px;
 }
 
 .icon-item a {
@@ -107,11 +112,15 @@
   color: rgba(142, 50, 63, 0.9);
 }
 
-/* for desktop */
-@media (min-width: 1025px) {
-  /* the icons */
-  .icon-item {
-    font-size: 20px;
-    padding: 8px;
+/* for tablet & up */
+@media(min-width: 768px) {
+  .name-container {
+    font-size: 120px;
+    padding-bottom: 0px;
+  }
+
+  .list-item {
+    font-size: 40px;
   }
 }
+
