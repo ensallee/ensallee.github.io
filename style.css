@@ -24,7 +24,7 @@ html {
   bottom: 25px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   padding-bottom: 20px;
   position: absolute;
   right: 15px;
@@ -48,8 +48,8 @@ html {
 /* these are also used by the poetry list, as well as the nav */
 .list-item {
   display: inline-block;
-  padding: 0px 8px 8px 0px;
-  font-size: 23px;
+  padding: 0px 3px 3px 0px;
+  font-size: 20px;
 }
 
 .list-item a {
@@ -121,6 +121,7 @@ html {
 
   .list-item {
     font-size: 40px;
+    padding: 0px 8px 8px 0px;
   }
 }
 
