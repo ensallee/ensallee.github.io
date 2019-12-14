@@ -79,7 +79,7 @@ html {
 
 .visible {
   visibility: visible;
-  animation: fadeIn .25s forwards;
+  animation: fadeIn 0.25s forwards;
 }
 
 .small {
@@ -100,8 +100,8 @@ html {
 
 .icon-item {
   display: inline-block;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 40px;
+  padding: 15px;
 }
 
 .icon-item a {
@@ -113,7 +113,7 @@ html {
 }
 
 /* for tablet & up */
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .name-container {
     font-size: 120px;
     padding-bottom: 0px;
@@ -124,14 +124,19 @@ html {
     font-size: 40px;
     padding: 0px 8px 8px 0px;
   }
+
+  .icon-item {
+    font-size: 30px;
+    padding: 10px;
+  }
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
