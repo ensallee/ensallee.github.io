@@ -50,15 +50,16 @@ html {
   display: inline-block;
   padding: 0px 3px 3px 0px;
   font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .list-item a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
-.list-item a:hover {
-  text-decoration: none;
+.list-item:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
