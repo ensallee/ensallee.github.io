@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.innerHTML === "Poetry") {
       poetryList.classList.toggle("visible");
     } else {
-      poetryList.classList.remove("visible");
+      e.target.id !== "pub" && poetryList.classList.remove("visible");
     }
   }
 });
