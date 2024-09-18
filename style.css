@@ -8,49 +8,37 @@ html {
   margin: 0;
 }
 
-.main-container {
-  position: relative;
+
+.simple-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F6EE;
+  height: 100%;
+  width: 100%;
+  color: #333333;
 }
 
-/* the escalator image */
-.main-container img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+.simple-main h1 {
+  font-size: 80px;
+  margin: 0px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-/* betsy sallee */
-.name-container {
-  bottom: 25px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  padding-bottom: 20px;
-  position: absolute;
-  right: 15px;
+.simple-nav {
+color: black;
+text-align: center;
+font-family: "Heebo", sans-serif;
 }
 
-/* the nav */
-.nav {
-  position: absolute;
-  bottom: 60px;
-  right: 15;
-  padding: 0px;
-  text-align: center;
-}
-
-.nav ul {
+.simple-nav ul {
   list-style: none;
   padding: 0px;
-  font-family: "Lato", sans-serif;
-}
+} 
 
-/* these are also used by the poetry list, as well as the nav */
 .list-item {
+  color: black;
   display: inline-block;
-  padding: 0px 3px 3px 0px;
-  font-size: 20px;
-  color: white;
   cursor: pointer;
 }
 
@@ -59,36 +47,109 @@ html {
   color: inherit;
 }
 
-.list-item:hover {
-  color: rgba(255, 255, 255, 0.5);
+.list-item:nth-last-child(n + 2)::after {
+  content: "|";
+  color: black;
+  padding: 20px;
+  color: #fab224
 }
 
-.list-item:nth-last-child(n + 2)::after {
+.list-item:hover {
+  color: #fa4724;
+}
+
+ .poetry-list {
+  visibility: hidden;
+}
+
+ .visible {
+  visibility: visible;
+  animation: fadeIn 0.25s forwards;
+}
+
+/*EVERYTHIG BELOW HERE IS OLD*/
+
+/* .main-container {
+  position: relative;
+} */
+
+/* the escalator image */
+/* .main-container img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+} */
+
+/* betsy sallee */
+/* .name-container {
+  bottom: 25px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 15px;
+} */
+
+/* the nav */
+/* .nav {
+  position: absolute;
+  bottom: 60px;
+  right: 15;
+  padding: 0px;
+  text-align: center;
+} */
+
+/* .nav ul {
+  list-style: none;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+} */
+
+/* these are also used by the poetry list, as well as the nav */
+/* .list-item {
+  display: inline-block;
+  padding: 0px 3px 3px 0px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+} */
+
+/* .list-item a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+/* .list-item:hover {
+  color: rgba(255, 255, 255, 0.5);
+} */
+
+/* .list-item:nth-last-child(n + 2)::after {
   content: "|";
   color: rgb(142, 50, 63);
   padding: 20px;
-}
+} */
 
 /* the poetry list */
-.poetry-list {
+/* .poetry-list {
   visibility: hidden;
   position: absolute;
   bottom: 0;
   right: 0;
   padding-right: 21px;
-}
+} */
 
-.visible {
+/* .visible {
   visibility: visible;
   animation: fadeIn 0.25s forwards;
-}
+} */
 
-.small {
+/* .small {
   font-size: 32px;
-}
+} */
 
 /* the icons */
-.icon-container {
+/* .icon-container {
   position: absolute;
   top: 0;
   left: 5px;
@@ -111,10 +172,16 @@ html {
 
 .icon-item a:hover {
   color: rgba(142, 50, 63, 0.9);
-}
+} */
 
 /* for tablet & up */
 @media (min-width: 768px) {
+
+  .simple-main h1 {
+    font-size: 200px;
+    margin-bottom: 0px;
+  }
+
   .name-container {
     font-size: 120px;
     padding-bottom: 0px;
