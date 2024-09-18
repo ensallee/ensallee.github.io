@@ -8,50 +8,40 @@ html {
   margin: 0;
 }
 
-.main-container {
-  position: relative;
+.simple-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F9F6EE;
+  color: #333333;
+  height: 100%;
+  width: 100%;
 }
 
-/* the escalator image */
-.main-container img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-/* betsy sallee */
-.name-container {
-  bottom: 25px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  padding-bottom: 20px;
-  position: absolute;
-  right: 15px;
+.simple-main h1 {
+  font-size: 90px;
+  margin: 0px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* the nav */
-.nav {
-  position: absolute;
-  bottom: 60px;
-  right: 15;
-  padding: 0px;
+.simple-nav {
   text-align: center;
+  font-family: "Heebo", sans-serif;
 }
 
-.nav ul {
+.simple-nav ul {
   list-style: none;
   padding: 0px;
-  font-family: "Lato", sans-serif;
 }
 
 /* these are also used by the poetry list, as well as the nav */
 .list-item {
+  color: black;
   display: inline-block;
-  padding: 0px 3px 3px 0px;
-  font-size: 20px;
-  color: white;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .list-item a {
@@ -59,23 +49,20 @@ html {
   color: inherit;
 }
 
-.list-item:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .list-item:nth-last-child(n + 2)::after {
   content: "|";
-  color: rgb(142, 50, 63);
+  color: black;
   padding: 20px;
+  color: #fab224
+}
+
+.list-item:hover {
+  color: #fa4724;
 }
 
 /* the poetry list */
 .poetry-list {
   visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 21px;
 }
 
 .visible {
@@ -83,53 +70,20 @@ html {
   animation: fadeIn 0.25s forwards;
 }
 
-.small {
-  font-size: 32px;
-}
-
-/* the icons */
-.icon-container {
-  position: absolute;
-  top: 0;
-  left: 5px;
-}
-
-.icon-container ul {
-  list-style: none;
-  padding: 0px;
-}
-
-.icon-item {
-  display: inline-block;
-  font-size: 40px;
-  padding: 15px;
-}
-
-.icon-item a {
-  color: rgba(142, 50, 63, 0.7);
-}
-
-.icon-item a:hover {
-  color: rgba(142, 50, 63, 0.9);
-}
-
 /* for tablet & up */
 @media (min-width: 768px) {
-  .name-container {
-    font-size: 120px;
-    padding-bottom: 0px;
-    right: 25px;
+
+  .simple-main h1 {
+    font-size: 200px;
+    flex-direction: column;
+    /* margin-bottom: 0px; */
   }
 
   .list-item {
-    font-size: 40px;
+    font-size: 50px;
     padding: 0px 8px 8px 0px;
   }
 
-  .icon-item {
-    font-size: 30px;
-    padding: 10px;
-  }
 }
 
 @keyframes fadeIn {
