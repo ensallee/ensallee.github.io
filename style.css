@@ -8,38 +8,40 @@ html {
   margin: 0;
 }
 
-
 .simple-main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #F9F6EE;
+  color: #333333;
   height: 100%;
   width: 100%;
-  color: #333333;
 }
 
 .simple-main h1 {
-  font-size: 80px;
+  font-size: 90px;
   margin: 0px;
   font-family: "Bebas Neue", sans-serif;
 }
 
+/* the nav */
 .simple-nav {
-color: black;
-text-align: center;
-font-family: "Heebo", sans-serif;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
 }
 
 .simple-nav ul {
   list-style: none;
   padding: 0px;
-} 
+}
 
+/* these are also used by the poetry list, as well as the nav */
 .list-item {
   color: black;
   display: inline-block;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .list-item a {
@@ -58,145 +60,30 @@ font-family: "Heebo", sans-serif;
   color: #fa4724;
 }
 
- .poetry-list {
-  visibility: hidden;
-}
-
- .visible {
-  visibility: visible;
-  animation: fadeIn 0.25s forwards;
-}
-
-/*EVERYTHIG BELOW HERE IS OLD*/
-
-/* .main-container {
-  position: relative;
-} */
-
-/* the escalator image */
-/* .main-container img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-} */
-
-/* betsy sallee */
-/* .name-container {
-  bottom: 25px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  padding-bottom: 20px;
-  position: absolute;
-  right: 15px;
-} */
-
-/* the nav */
-/* .nav {
-  position: absolute;
-  bottom: 60px;
-  right: 15;
-  padding: 0px;
-  text-align: center;
-} */
-
-/* .nav ul {
-  list-style: none;
-  padding: 0px;
-  font-family: "Lato", sans-serif;
-} */
-
-/* these are also used by the poetry list, as well as the nav */
-/* .list-item {
-  display: inline-block;
-  padding: 0px 3px 3px 0px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-} */
-
-/* .list-item a {
-  text-decoration: none;
-  color: inherit;
-} */
-
-/* .list-item:hover {
-  color: rgba(255, 255, 255, 0.5);
-} */
-
-/* .list-item:nth-last-child(n + 2)::after {
-  content: "|";
-  color: rgb(142, 50, 63);
-  padding: 20px;
-} */
-
 /* the poetry list */
-/* .poetry-list {
+.poetry-list {
   visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 21px;
-} */
+}
 
-/* .visible {
+.visible {
   visibility: visible;
   animation: fadeIn 0.25s forwards;
-} */
-
-/* .small {
-  font-size: 32px;
-} */
-
-/* the icons */
-/* .icon-container {
-  position: absolute;
-  top: 0;
-  left: 5px;
 }
-
-.icon-container ul {
-  list-style: none;
-  padding: 0px;
-}
-
-.icon-item {
-  display: inline-block;
-  font-size: 40px;
-  padding: 15px;
-}
-
-.icon-item a {
-  color: rgba(142, 50, 63, 0.7);
-}
-
-.icon-item a:hover {
-  color: rgba(142, 50, 63, 0.9);
-} */
 
 /* for tablet & up */
 @media (min-width: 768px) {
 
   .simple-main h1 {
     font-size: 200px;
-    margin-bottom: 0px;
-  }
-
-  .name-container {
-    font-size: 120px;
-    padding-bottom: 0px;
-    right: 25px;
+    flex-direction: column;
+    /* margin-bottom: 0px; */
   }
 
   .list-item {
-    font-size: 40px;
+    font-size: 50px;
     padding: 0px 8px 8px 0px;
   }
 
-  .icon-item {
-    font-size: 30px;
-    padding: 10px;
-  }
 }
 
 @keyframes fadeIn {
