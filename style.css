@@ -63,6 +63,7 @@ html {
 /* the poetry list */
 .poetry-list {
   visibility: hidden;
+  text-align: center;
 }
 
 .visible {
