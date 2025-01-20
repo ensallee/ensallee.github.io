@@ -13,8 +13,8 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F9F6EE;
-  color: #333333;
+  background-color: #13505B;
+  color: #040404;
   height: 100%;
   width: 100%;
 }
@@ -38,7 +38,7 @@ html {
 
 /* these are also used by the poetry list, as well as the nav */
 .list-item {
-  color: black;
+  color: 040404;
   display: inline-block;
   cursor: pointer;
   font-size: 30px;
@@ -53,11 +53,15 @@ html {
   content: "|";
   color: black;
   padding: 20px;
-  color: #fab224
+  color: #0C7489
 }
 
 .list-item:hover {
-  color: #fa4724;
+  color: #AD7A99;
+}
+
+.poetry-list .list-item:hover {
+  color: #9FC490
 }
 
 /* the poetry list */
