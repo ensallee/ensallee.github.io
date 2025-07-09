@@ -69,11 +69,13 @@ html {
 .poetry-list {
   visibility: hidden;
   text-align: center;
+  height: 0%;
 }
 
 .visible {
   visibility: visible;
   animation: fadeIn 0.25s forwards;
+  height: auto;
 }
 
 /* for tablet & up */
