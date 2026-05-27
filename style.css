@@ -70,6 +70,7 @@ html {
   visibility: hidden;
   text-align: center;
   height: 0%;
+  width: 100%;
 }
 
 .visible {
@@ -89,6 +90,10 @@ html {
   .list-item {
     font-size: 50px;
     padding: 0px 8px 8px 0px;
+  }
+
+  .poetry-list {
+    width: 75%;
   }
 
 }
